@@ -1,0 +1,54 @@
+﻿<Window x:Class="SQL_Input_Formatter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SQL_Input_Formatter"
+        mc:Ignorable="d"
+        Title="SQL Input Formatter" Height="383" Width="872">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF5DFF00" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock x:Name="txtInQueryLabel" HorizontalAlignment="Left" Margin="48,29,0,0" Text="Format strings separated by commas, parenthesis on the outside, for &quot;IN (..,..)&quot; query)" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Foreground="White" Height="41" Width="340"/>
+        <TextBlock x:Name="txtInsertQueryLabel" HorizontalAlignment="Right" Margin="0,29,60,0" Text="Format strings, each in parenthesis, comma delimited, for INSERT query" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Foreground="White" Height="41" Width="340"/>
+        <TextBox x:Name="txtInQueryItems" HorizontalAlignment="Left" Margin="48,75,0,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalAlignment="Top"  Width="340" Height="225"/>
+        <TextBox x:Name="txtInsertQueryItems" HorizontalAlignment="Right" Margin="0,75,60,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalAlignment="Top" Width="340" Height="225"/>
+        <Button x:Name="btnFormatInQuery" Content="Format and copy to clipboard" HorizontalAlignment="Left" Margin="48,0,0,10" VerticalAlignment="Bottom" Height="30" Width="235" FontWeight="Bold" Click="btnFormatInQuery_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF183C40"/>
+                    <GradientStop Color="#FF1DEAFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnFormatInsertQuery" Content="Format and copy to clipboard" HorizontalAlignment="Right" Margin="0,0,165,10" VerticalAlignment="Bottom" Height="30" Width="235" FontWeight="Bold" Click="btnFormatInsertQuery_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF183C40"/>
+                    <GradientStop Color="#FF1DEAFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnClearInQuery" Content="Clear" HorizontalAlignment="Left" Margin="293,0,0,10" VerticalAlignment="Bottom" Height="30" Width="95" FontWeight="Bold" Click="btnClearInQuery_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFAD1DFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnClearInsertQuery" Content="Clear" HorizontalAlignment="Right" Margin="0,0,60,10" VerticalAlignment="Bottom" Height="30" Width="95" FontWeight="Bold" Click="btnClearInsertQuery_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFAD1DFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

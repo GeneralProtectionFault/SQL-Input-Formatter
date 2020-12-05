@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQL Input Formatter", "SQL Input Formatter.csproj", "{B7AC2CF0-0584-445E-B7D8-1FC2D44A290B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7AC2CF0-0584-445E-B7D8-1FC2D44A290B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7AC2CF0-0584-445E-B7D8-1FC2D44A290B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7AC2CF0-0584-445E-B7D8-1FC2D44A290B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7AC2CF0-0584-445E-B7D8-1FC2D44A290B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E73D691-7E6D-44B4-9374-5E5B16638ACB}
+	EndGlobalSection
+EndGlobal
